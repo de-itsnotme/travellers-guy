@@ -17,7 +17,7 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 
-        <link href="js/ui/themes/cupertino/jquery-ui-1.7.1.css" type="text/css" rel="stylesheet">
+        <link href="{{ asset('js/ui/themes/cupertino/jquery-ui-1.7.1.css') }}" type="text/css" rel="stylesheet">
 
         <!-- Slider Kit styles -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/sliderkit-core.css') }}" media="screen, projection" />
@@ -34,13 +34,13 @@
         {% block body %}{% endblock %}
         {{ include('includers/footer.html.twig') }}
 
-        <script src="js/jquery.js"></script>
-        <script src="js/menuzord.js"></script>
-        <script type="text/javascript" src="js/ui/jquery-ui-1.7.1.min.js"></script>
+        <script src="{{ asset('js/jquery.js') }}"></script>
+        <script src="{{ asset('js/menuzord.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/ui/jquery-ui-1.7.1.min.js') }}"></script>
 
         <script type="text/javascript">
-            jQuery(document).ready(function(){
-                jQuery("#menuzord").menuzord({
+            $(document).ready(function(){
+                $("#menuzord").menuzord({
                     align: "right"
                 });
             });
