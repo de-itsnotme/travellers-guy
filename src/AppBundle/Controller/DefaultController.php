@@ -20,9 +20,9 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/register", name="register")
+     * @Route("/registera", name="registera")
      */
-    public function registerAction(Request $request)
+    public function registeraAction(Request $request)
     {
         // replace this example code with whatever you need
         return $this->render('default/register.html.twig', [
@@ -31,9 +31,9 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/login", name="login")
+     * @Route("/logina", name="logina")
      */
-    public function loginAction(Request $request)
+    public function loginaAction(Request $request)
     {
         // replace this example code with whatever you need
         return $this->render('default/login.html.twig', [
