@@ -1,0 +1,71 @@
+{% block header %}
+    <div id="banner-holder">
+        <div id="banner-inner"><!-- Banner  -->
+
+            <div id="logo"><!-- Logo -->
+                <a href="index.html"><img width="471" height="115" alt="" src="images/logo.png"></a>
+                <!-- Logo end --></div>
+
+            <div id="navigation"><!-- Navigation -->
+
+                <div class="menuzord red menuzord-responsive" id="menuzord"><a class="showhide" href="javascript:void(0)"><em></em><em></em><em></em></a>
+
+
+                    <ul class="menuzord-menu menuzord-right menuzord-indented scrollable" style="max-height: 400px; display: block;">
+                        <li class="active"><a href="javascript:void(0)">Plans<span class="indicator">+</span></a>
+                            <div class="megamenu" style="right: 0px; display: none;">
+                                <div class="megamenu-row">
+                                    <div class="col12">
+                                        <p><a href="#">Atlantic City</a></p>
+                                        <p><a href="#">California</a></p>
+                                        <p><a href="#">Canada</a></p>
+                                        <p><a href="#">Caribbean</a></p>
+                                        <p><a href="#">Chicago</a></p>
+                                        <p><a href="#">Colorado</a></p>
+                                        <p><a href="#">Florida</a></p>
+                                        <p><a href="#">Global Travel</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Partner<span class="indicator">+</span></a>
+                            <div class="megamenu" style="right: 0px; display: none;">
+                                <div class="megamenu-row">
+                                    <div class="col12">
+                                        <p><a href="#">posuere vestibulum</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+                                        <p><a href="#">mattis dapibus </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Forum<span class="indicator">+</span></a>
+                            <div class="megamenu" style="right: 0px; display: none;">
+                                <div class="megamenu-row">
+                                    <div class="col12">
+                                        <p><a href="#">mattis dapibus </a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+                                        <p><a href="#">Lorem ipsum dolor sit amet</a></p>
+                                        <p><a href="#">posuere vestibulum</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)">Blog</a></li>
+                        <li class="scrollable-fix"></li><li class="scrollable-fix"></li></ul>
+                </div>
+
+                <!-- Navigation End --></div>
+
+            <div id="login-details"><!-- Login -->
+                <ul>
+                    <li><a href="#"><img width="13" height="16" alt="" src="images/icon-help.png"><p>Help</p></a></li>
+                    <li><a href="{{ asset("login") }}"><img width="13" height="18" alt="" src="images/icon-login.png"><p>Login</p></a></li>
+                    <li><a href="{{ asset("register") }}"><img width="17" height="15" alt="" src="images/icon-register.png"><p>Register</p></a></li>
+                </ul>
+                <!-- Login End --></div>
+
+            <!-- Banner End --></div>
+    </div>
+{% endblock %}

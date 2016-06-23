@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div id="content-inner"><!-- Content -->
+
+        {{ include('includers/filter-block.html.twig') }}
+
+        <div id="content-right"><!-- Right Start -->
+
+
+
+            <h2>Login Form</h2>
+
+            <form class="cbp-mc-form">
+
+                <div class="cbp-mc-column">
+                    <label for="user_name">Username</label>
+                    <input type="text" placeholder="Enter Username" name="user_name" id="user_name">
+                    <label for="password">Password</label>
+                    <input type="text" placeholder="Enter Password" name="password" id="password">
+                    <label></label>
+                    <input type="submit" value="Login" class="cbp-mc-submit">
+                </div>
+
+                <div class="cbp-mc-column-text">
+
+                    <em>Welcome! We're thrilled to help you explore the best things to see and do in your city.</em><br><br>
+                    <strong>Be great at what you do</strong><br>
+                    Get started - <strong>it's free</strong>.<br><br>
+
+                </div>
+            </form>
+
+
+            <!-- Right End --></div>
+
+        <!-- Content End --></div>
+
+{% endblock %}

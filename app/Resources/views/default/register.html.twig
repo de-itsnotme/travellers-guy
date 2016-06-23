@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div id="content-inner"><!-- Content -->
+
+        {{ include('includers/filter-block.html.twig') }}
+
+
+        <div id="content-right"><!-- Right Start -->
+
+            <h2>Registration Form</h2>
+
+            <form class="cbp-mc-form">
+
+                <div class="cbp-mc-column">
+                    <label for="first_name">Text Field</label>
+                    <input type="text" placeholder="Enter Text" name="first_name" id="first_name">
+                    <label for="country">Dropdown</label>
+                    <select name="country" id="country">
+                        <option>Choose a country</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Portugal</option>
+                    </select>
+                    <label for="comments">Radio Button</label>
+                    <input type="radio" checked="checked" value="1" name="radio" id="radio1"><label for="radio1"><span><span></span></span>Option 1</label>
+                </div>
+
+                <div class="cbp-mc-column">
+                    <label for="bio">Textarea</label>
+                    <textarea name="bio" id="bio"></textarea>
+                    <label for="comments">Checkbox</label>
+                    <input type="checkbox" checked="checked" value="1" name="checkbox" id="checkbox1"><label for="checkbox1"><span></span>Option 1</label>
+                </div>
+
+                <div class="cbp-mc-column-full">
+                    <strong>For 100% form layout</strong>
+                    <label for="text_name">Text Field</label>
+                    <input type="text" placeholder="Enter Text" name="text_name" id="text_name">
+                    <label for="country">Dropdown</label>
+                    <select name="country" id="country">
+                        <option>Choose a country</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                        <option>Portugal</option>
+                    </select>
+                    <label for="comments">Radio Button</label>
+                    <input type="radio" checked="checked" value="1" name="radio" id="radio1"><label for="radio1"><span><span></span></span>Option 1</label>
+                    <label for="bio">Textarea</label>
+                    <textarea name="bio" id="bio"></textarea>
+                    <label for="comments">Checkbox</label>
+                    <input type="checkbox" checked="checked" value="1" name="checkbox" id="checkbox1"><label for="checkbox1"><span></span>Option 1</label>
+                </div>
+
+                <div class="cbp-mc-submit-wrap"><input type="submit" value="Send your data" class="cbp-mc-submit"></div>
+            </form>
+
+
+            <!-- Right End --></div>
+
+        <!-- Content End --></div>
+
+{% endblock %}
