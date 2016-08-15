@@ -34,6 +34,7 @@
         {% block body %}{% endblock %}
         {{ include('includers/footer.html.twig') }}
 
+        {#<script src="{{ asset('js/jquery.js') }}"></script>#}
         <script src="{{ asset('js/jquery.js') }}"></script>
         <script src="{{ asset('js/menuzord.js') }}"></script>
         <script type="text/javascript" src="{{ asset('js/ui/jquery-ui-1.7.1.min.js') }}"></script>
@@ -45,6 +46,8 @@
                 });
             });
         </script>
+
+        <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
 
         {% block javascripts %}{% endblock %}
     </body>

@@ -1,8 +1,13 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-{{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit' } }) }}
-    {{ form_widget(form) }}
-    <div>
-        <input type="submit" value="{{ 'profile.edit.submit'|trans }}" />
+<h2>Edit Profile</h2>
+
+{{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'fos_user_profile_edit cbp-mc-form' } }) }}
+    <div class="cbp-mc-column">
+        {{ form_widget(form) }}
     </div>
+    <div class="cbp-mc-submit-wrap">
+        <input type="submit" class="cbp-mc-submit" value="{{ 'profile.edit.submit'|trans }}" />
+    </div>
+
 {{ form_end(form) }}

@@ -61,8 +61,14 @@
             <div id="login-details"><!-- Login -->
                 <ul>
                     <li><a href="#"><img width="13" height="16" alt="" src="{{ asset('images/icon-help.png') }}"><p>Help</p></a></li>
-                    <li><a href="{{ asset("login") }}"><img width="13" height="18" alt="" src="{{ asset('images/icon-login.png') }}"><p>Login</p></a></li>
-                    <li><a href="{{ asset("register") }}"><img width="17" height="15" alt="" src="{{ asset('images/icon-register.png') }}"><p>Register</p></a></li>
+
+                    {% if app.user %}
+                        <li><a href="{{ asset("profile") }}"><img width="13" height="18" alt="" src="{{ asset('images/icon-login.png') }}"><p>My Profile</p></a></li>
+                        <li><a href="{{ asset("logout") }}"><img width="13" height="18" alt="" src="{{ asset('images/icon-login.png') }}"><p>Logout</p></a></li>
+                    {% else %}
+                        <li><a href="{{ asset("login") }}"><img width="13" height="18" alt="" src="{{ asset('images/icon-login.png') }}"><p>Login</p></a></li>
+                        <li><a href="{{ asset("register") }}"><img width="17" height="15" alt="" src="{{ asset('images/icon-register.png') }}"><p>Register</p></a></li>
+                    {% endif %}
                 </ul>
                 <!-- Login End --></div>
 

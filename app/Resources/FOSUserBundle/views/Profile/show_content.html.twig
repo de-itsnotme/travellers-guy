@@ -1,6 +1,19 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
 <div class="fos_user_user_show">
-    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+    <h2>My Profile</h2>
+    <form class="cbp-mc-form" action="/profile/edit" method="post">
+
+        <div class="cbp-mc-column">
+            <label for="first_name">{{ 'profile.show.username'|trans }}</label>
+            {{ user.username }}
+            <label for="email">{{ 'profile.show.email'|trans }}</label>
+            <p>{{ user.email }}</p>
+        </div>
+
+        <div class="cbp-mc-submit-wrap">
+            <input type="submit" class="cbp-mc-submit" value="Edit" />
+        </div>
+
+    </form>
 </div>
